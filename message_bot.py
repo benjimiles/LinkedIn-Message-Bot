@@ -21,3 +21,6 @@ time.sleep(10)
 
 driver.get("https://www.linkedin.com/search/results/people/?origin=SWITCH_SEARCH_VERTICAL&sid=FVZ")
 time.sleep(10)
+
+all_buttons = driver.find_elements(by=By.XPATH, value="//button[@aria-label='Message ']")
+message_buttons = [btn for btn in all_buttons if btn.text == "Message"]
