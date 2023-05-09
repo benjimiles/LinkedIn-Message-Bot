@@ -14,3 +14,7 @@ password = driver.find_element(by=By.NAME, value="session_password")
 username.send_keys('YOUR_EMAIL')
 password.send_keys('YOUR_PASSWORD')
 time.sleep(5)
+
+submit = driver.find_element(by=By.XPATH, value='//*[@id="main-content"]/section[1]/div/div/form/div[2]/button')
+submit.click()
+time.sleep(10)
