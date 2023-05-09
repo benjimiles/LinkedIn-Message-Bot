@@ -10,3 +10,7 @@ driver.get("https://www.linkedin.com")
 
 username = driver.find_element(by=By.NAME, value="session_key")
 password = driver.find_element(by=By.NAME, value="session_password")
+
+username.send_keys('YOUR_EMAIL')
+password.send_keys('YOUR_PASSWORD')
+time.sleep(5)
