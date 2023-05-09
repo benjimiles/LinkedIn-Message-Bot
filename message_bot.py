@@ -24,3 +24,13 @@ time.sleep(10)
 
 all_buttons = driver.find_elements(by=By.XPATH, value="//button[@aria-label='Message ']")
 message_buttons = [btn for btn in all_buttons if btn.text == "Message"]
+
+message_buttons[0].click()
+
+paragraphs = driver.find_elements(by=By.TAG_NAME, value="p")
+
+counter = 0
+for p in paragraphs:
+    print(counter)
+    print(p.text)
+    counter += 1
