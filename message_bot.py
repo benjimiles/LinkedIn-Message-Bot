@@ -4,3 +4,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 import time 
+
+driver = webdriver.Chrome("Path_to_chrome_driver")
+driver.get("https://www.linkedin.com")
