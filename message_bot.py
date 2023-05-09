@@ -18,3 +18,6 @@ time.sleep(5)
 submit = driver.find_element(by=By.XPATH, value='//*[@id="main-content"]/section[1]/div/div/form/div[2]/button')
 submit.click()
 time.sleep(10)
+
+driver.get("https://www.linkedin.com/search/results/people/?origin=SWITCH_SEARCH_VERTICAL&sid=FVZ")
+time.sleep(10)
